@@ -111,6 +111,7 @@ public class AproximacionCRUDArrays2 {
                 case 4:
                     System.out.println("Opcion ver: ");
                     for(int i=0;i<tipo.length;i++){
+                        System.out.println("-- Tarjeta "+i+" --");
                         System.out.println("Tipo: "+tipo[i]+"\nMarca: "+marca[i]+"\nPrecio: "+precio[i]);
                     }
                     break;
@@ -119,7 +120,6 @@ public class AproximacionCRUDArrays2 {
                     break;
             }
         }while(fin!=true);
-        
-        
+           
     }
 }
