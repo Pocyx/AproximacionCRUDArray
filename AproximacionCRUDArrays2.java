@@ -43,12 +43,14 @@ public class AproximacionCRUDArrays2 {
                         System.out.println("Pulsa n para introducir otra tarjeta o t para terminar. ");
                         nuevaTarjeta = s.nextLine();
                         if(nuevaTarjeta.equals("n")){
+                            cont++;
                             continue;
                         } else if(nuevaTarjeta.equals("t")){
                             break;
                         }
-                        cont++;
+                        
                     }while(nuevaTarjeta.equals("n"));
+                    break;
 
                 case 2:
                     cont=0;
@@ -65,18 +67,19 @@ public class AproximacionCRUDArrays2 {
                             marca[cont]=marcaI;
                         }
                         System.out.print("Introduzca el precio: ");
-                        int precioI=Integer.parseInt(s.nextLine());
-                        if(!precio.equals("")){
+                        double precioI=Integer.parseInt(s.nextLine());
+                        if(precioI!=0){
                             precio[cont]=precioI;
                         }
                         System.out.println("Pulsa n para introducir otra tarjeta o t para terminar. ");
                         nuevaTarjeta = s.nextLine();
                         if(nuevaTarjeta.equals("n")){
+                            cont++;
                             continue;
                         } else if(nuevaTarjeta.equals("t")){
                             break;
                         }
-                        cont++;
+                        
                     }while(nuevaTarjeta.equals("n"));
                     break;
                 case 3:
@@ -94,18 +97,19 @@ public class AproximacionCRUDArrays2 {
                             marca[cont]=marcaI;
                         }
                         System.out.print("Introduzca el precio: ");
-                        int precioI=Integer.parseInt(s.nextLine());
-                        if(precio.equals("")){
+                        double precioI=Integer.parseInt(s.nextLine());
+                        if(precioI==0){
                             precio[cont]=precioI;
                         }
                         System.out.println("Pulsa n para introducir otra tarjeta o t para terminar. ");
                         nuevaTarjeta = s.nextLine();
                         if(nuevaTarjeta.equals("n")){
+                            cont++;
                             continue;
                         } else if(nuevaTarjeta.equals("t")){
                             break;
                         }
-                        cont++;
+                        
                     }while(nuevaTarjeta.equals("n"));
                     break;
                 case 4:
